@@ -18,8 +18,12 @@ namespace PhloSystemsBackendTechAssessment.Controllers
             _productService = productService;
             _logger = logger;
         }
-
-       
+        /// <summary>
+        /// Highlights specified words in the product descriptions.
+        /// </summary>
+        /// <param name="products">The list of products to highlight words in.</param>
+        /// <param name="highlight">A comma-separated string of words to highlight.</param>
+        /// <returns>The list of products with highlighted words in their descriptions.</returns>
         [HttpGet("Products")]              
         public async Task<IActionResult> GetProducts([FromQuery] decimal? minprice, [FromQuery] decimal? maxprice, [FromQuery] string size, [FromQuery] string highlight)
         {

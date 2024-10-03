@@ -5,7 +5,7 @@ using PhloSystemsBackendTechAssessment.ProductRepository;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+IConfiguration configuration = builder.Configuration; // Access IConfiguration from the builder
 builder.Services.AddControllers();
 builder.Services.AddHttpClient<IProductService, ProductService>(); // Register the service
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
