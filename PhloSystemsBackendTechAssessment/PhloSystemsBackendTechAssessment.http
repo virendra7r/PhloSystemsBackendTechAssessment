@@ -1,0 +1,6 @@
+@PhloSystemsBackendTechAssessment_HostAddress = http://localhost:5290
+
+GET {{PhloSystemsBackendTechAssessment_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

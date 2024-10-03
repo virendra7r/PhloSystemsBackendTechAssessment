@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhloSystemsBackendTechAssessment", "PhloSystemsBackendTechAssessment\PhloSystemsBackendTechAssessment.csproj", "{8629E0CD-29DB-4E93-A225-24605E79D44B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhloSystemsBackendTechAssessmentTestProject", "PhloSystemsBackendTechAssessmentTestProject\PhloSystemsBackendTechAssessmentTestProject.csproj", "{F894029F-AC37-4001-87D8-DC7D712762EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8629E0CD-29DB-4E93-A225-24605E79D44B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8629E0CD-29DB-4E93-A225-24605E79D44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8629E0CD-29DB-4E93-A225-24605E79D44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8629E0CD-29DB-4E93-A225-24605E79D44B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F894029F-AC37-4001-87D8-DC7D712762EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F894029F-AC37-4001-87D8-DC7D712762EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F894029F-AC37-4001-87D8-DC7D712762EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F894029F-AC37-4001-87D8-DC7D712762EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5119DEBA-6AA3-407E-9701-A69C19243001}
+	EndGlobalSection
+EndGlobal
