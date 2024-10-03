@@ -25,18 +25,8 @@ namespace PhloSystemsBackendTechAssessment.Controllers
         {
             try
             {
-                var products = await _productService.GetProductsAsync();
-
-                // Logging the response from the mock API
-                //_logger.LogInformation("Retrieved products: {@Products}", products);
-                //return Ok(products);
-
-
-
-                // Filter the products
-                //var filteredProducts = products.AsQueryable();
+                var products = await _productService.GetProductsAsync();                
                 IEnumerable<Product> filteredProducts = products.Products;
-
 
                 if (minprice.HasValue)
                 {
@@ -61,8 +51,6 @@ namespace PhloSystemsBackendTechAssessment.Controllers
                 }
 
                 return Ok(filteredProducts.ToList());
-
-
             }
             catch (Exception ex)
             {
@@ -70,8 +58,6 @@ namespace PhloSystemsBackendTechAssessment.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
-
-
         private List<Product> HighlightWords(List<Product> products, string highlight)
         {
             var wordsToHighlight = highlight.Split(',')
@@ -85,7 +71,6 @@ namespace PhloSystemsBackendTechAssessment.Controllers
                     product.Description = Regex.Replace(product.Description, $@"\b{Regex.Escape(word)}\b", $"<em>{word}</em>", RegexOptions.IgnoreCase);
                 }
             }
-
             return products;
         }
     }
